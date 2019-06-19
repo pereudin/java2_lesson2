@@ -20,7 +20,7 @@ public class Main {
     }
 
     public static int twoDimensional(String[][] stringArray) throws MyArraySizeException, MyArrayDataException {
-        if(stringArray[0].length != 4 || stringArray[1].length != 4) {
+        if(stringArray == null || stringArray[0].length != 4 || stringArray[1].length != 4) {
             throw new MyArraySizeException("Массив должен быть размером 4 на 4!");
         }
 
